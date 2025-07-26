@@ -142,13 +142,11 @@ The system uses `db.json` for data storage with the following structure:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
+-Syed Aashiq Ahmed - [YourGitHub](https://github.com/SyedAashiqAhmed)
 
 ## 🙏 Acknowledgments
 
