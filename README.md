@@ -55,7 +55,7 @@ HealthCare Project/
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repository-url>
+   git clone <HealthCare-Project-Integrated-with-GEN-AI>
    cd HealthCare-Project
    ```
 
