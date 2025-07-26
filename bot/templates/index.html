@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Symptom Checker</title>
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+    }
+
+    h1 {
+      color: #00e0ff;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background-color: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00e0ff;
+    }
+
+    textarea {
+      width: 300px;
+      height: 100px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: #0f172a;
+      color: white;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #00e0ff;
+      color: #0f172a;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .response {
+      margin-top: 30px;
+      padding: 20px;
+      max-width: 600px;
+      background-color: #1e293b;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00e0ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>AI Symptom Checker</h1>
+  <form method="POST">
+    <textarea name="symptoms" placeholder="Enter your symptoms..."></textarea><br>
+    <button type="submit">Get AI Advice</button>
+  </form>
+
+  {% if response %}
+  <div class="response">
+    <h3>AI Health Advice:</h3>
+    <p>{{ response }}</p>
+  </div>
+  {% endif %}
+</body>
+</html>

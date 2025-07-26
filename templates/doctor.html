@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Doctor Portal</title></head>
+<body>
+  <h2>Doctor Dashboard</h2>
+
+  {% for appt in appointments %}
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+      <strong>Patient:</strong> {{ appt.username }}<br>
+      <strong>Doctor:</strong> {{ appt.doctor }}<br>
+      <strong>Date:</strong> {{ appt.date }}<br>
+      <strong>Time:</strong> {{ appt.time }}<br>
+      <strong>Symptom:</strong> {{ appt.symptoms }}<br>
+      <strong>Status:</strong> {{ appt.status }}<br>
+      <form method="POST" style="margin-top: 5px;">
+        <input type="hidden" name="username" value="{{ appt.username }}">
+        <button name="decision" value="accepted">Accept</button>
+        <button name="decision" value="rejected">Reject</button>
+      </form>
+    </div>
+  {% endfor %}
+</body>
+</html>

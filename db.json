@@ -1,0 +1,33 @@
+{
+  "users": {
+    "Syed Aashiq": "a",
+    "khan": "hare",
+    "S.SYED": "sa"
+  },
+  "appointments": [
+    {
+      "username": "Syed Aashiq",
+      "doctor": "Dr. Khan",
+      "date": "2025-07-16",
+      "time": "22:10",
+      "symptoms": "fever",
+      "status": "rejected"
+    },
+    {
+      "username": "khan",
+      "doctor": "Dr. Sharma",
+      "date": "2025-07-16",
+      "time": "22:12",
+      "symptoms": "fever",
+      "status": "accepted"
+    },
+    {
+      "username": "khan",
+      "doctor": "Dr. Sharma",
+      "date": "2025-07-19",
+      "time": "10:00",
+      "symptoms": "fever",
+      "status": "pending"
+    }
+  ]
+}
